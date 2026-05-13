@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "title": "Sovereignty of the People",
+    "simplified": "All power belongs to YOU (the people). You lend it to the leaders, but you remain the boss.",
+    "text": "All sovereign power belongs to the people of Kenya and shall be exercised only in accordance with this Constitution.",
+    "breakdown": [
+      "Power belongs to Wanjiku (the people).",
+      "It is exercised directly (voting/referendum) or indirectly (representatives).",
+      "Power is delegated to: Parliament, Executive, and Judiciary."
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Supremacy of this Constitution",
+    "simplified": "The Constitution is the Supreme Leader. No person or law is above it.",
+    "text": "This Constitution is the supreme law of the Republic and binds all persons and all State organs at both levels of government.",
+    "breakdown": [
+      "It is the 'Supreme Law'.",
+      "Any law that goes against it is VOID (invalid).",
+      "No custom or tradition can break the Constitution."
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Defence of this Constitution",
+    "simplified": "It is your duty to protect this book. Illegal takeovers are not allowed.",
+    "text": "Every person has an obligation to respect, uphold and defend this Constitution.",
+    "breakdown": [
+      "Every person must defend it.",
+      "Establishing a government illegally (coup) is unlawful."
+    ]
+  }
+]

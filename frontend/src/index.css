@@ -1,0 +1,186 @@
+@import "tailwindcss";
+
+/* This is how you load plugins in v4 */
+@plugin "@tailwindcss/forms";
+@plugin "@tailwindcss/typography";
+
+:root {
+  --color-red: #BB0000; /* Primary Action */
+  --color-green: #006600; /* Accent/Success */
+  --color-black: #000000; /* Text */
+  --color-white: #FFFFFF;
+}
+
+/* LocateStation.css */
+:root {
+  --kenya-red: #BB0000;
+  --kenya-green: #006600;
+  --kenya-black: #212529;
+  --bs-body-bg: #f8f9fa; /* Light grey background from mockup */
+  --theme-dark-bg: #1a1d24; /* Deep slate for the card background */
+  --theme-darker-bg: #121418; /* Darker background for the page */
+  --theme-text-light: #e9ecef;
+  --theme-text-muted: #adb5bd;
+}
+/* LOCATE YOUR STATION PAGE */
+/* --- Page Content Layout --- */
+.page-container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: calc(100vh - 70px); /* Adjust based on header height */
+    overflow: hidden;
+}
+
+/* --- Left Panel Styles --- */
+.left-panel {
+    height: 100%;
+    overflow-y: auto;
+    padding-right: 15px;
+}
+
+.search-input-group .input-group-text {
+    background-color: white;
+    border-right: none;
+}
+.search-input-group .form-control {
+    border-left: none;
+}
+.search-input-group .form-control:focus {
+    box-shadow: none;
+    border-color: #ced4da;
+}
+
+
+.btn-location {
+    background-color: #e8f5e9; /* Light green bg */
+    color: var(--kenya-green);
+    font-weight: 600;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Result Cards styling */
+.station-card {
+    border: 1px solid #e9ecef;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* The active state matching the mockup */
+.station-card.active {
+    border: 2px solid var(--kenya-red);
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.status-indicator {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+.status-open { background-color: var(--kenya-green); }
+
+/* Buttons within cards */
+.btn-kenya-red {
+    background-color: var(--kenya-red);
+    border: none;
+    font-weight: 600;
+}
+.btn-kenya-red:hover { background-color: #990000; }
+
+.btn-outline-secondary {
+    color: #343a40;
+    border-color: #ced4da;
+    font-weight: 600;
+}
+
+/* --- Right Panel Map Styles --- */
+.map-panel {
+    height: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    background-color: #e9ecef; /* Placeholder map color */
+    box-shadow: inset 0 0 20px rgba(0,0,0,0.05);
+}
+
+/* Simulating map pins for the static view */
+.map-pin {
+    position: absolute;
+    transform: translate(-50%, -100%); /* Center bottom point */
+    filter: drop-shadow(0 4px 4px rgba(0,0,0,0.3));
+}
+
+.iebc-data-pill {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    padding: 6px 20px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    color: #6c757d;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* --- Modal Styles for Leaders --- */
+.leader-item {
+    border-left: 4px solid var(--kenya-green);
+}
+.leader-role {
+    color: var(--kenya-green);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+.leader-name {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+.leader-job {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+/*Know Who Represents You */
+/* Progress Bars */
+.bg-orange { background-color: #fd7e14 !important; }
+.bg-yellow { background-color: #ffc107 !important; }
+.bg-grey   { background-color: #6c757d !important; }
+
+/* Animated stripes for better visibility */
+.promise-progress .progress-bar {
+  transition: width 1.5s ease-in-out;
+}
+
+/* Optional hover glow on matrix cards */
+.matrix-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(255,255,255,0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Sphere container rings hover effect */
+.sphere-ring:hover {
+  color: #fff;
+  font-weight: 600;
+  text-shadow: 0 0 5px rgba(255,255,255,0.6);
+  cursor: pointer;
+}
+
+/* Sphere core hover */
+.sphere-core:hover {
+  box-shadow: 0 0 30px rgba(255, 215, 0, 0.4);
+  cursor: pointer;
+}
+
+/* Custom text colors */
+.text-red { color: #dc3545 !important; }
+
+
+
