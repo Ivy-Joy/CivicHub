@@ -47,33 +47,33 @@ export default function App() {
           <Route
             path="/locate"
             element={
-              <ProtectedRoute>
+              
                 <LocateStationPage />
-              </ProtectedRoute>
+              
             }
           />
           <Route
             path="/read"
             element={
-              <ProtectedRoute>
+              
                 <ReadConstitution />
-              </ProtectedRoute>
+              
             }
           />
           <Route
             path="/dates"
             element={
-              <ProtectedRoute>
+        
                 <ElectionDates />
-              </ProtectedRoute>
+              
             }
           />
           <Route
             path="/whorepresents"
             element={
-              <ProtectedRoute>
+              //<ProtectedRoute>
                 <WhoRepresentsMe />
-              </ProtectedRoute>
+              //</ProtectedRoute>
             }
           />
           <Route
